@@ -1,161 +1,143 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-  <meta charset="UTF-8">
-  <title>Baste Fier | Kuota & Sport</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baste Fier | Kuota & Analiza</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0b1220;
-      color: #ffffff;
-    }
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#0b0f14;
+    color:#eaeaea;
+}
+header{
+    text-align:center;
+    padding:40px 20px;
+    border-bottom:2px solid #00ff88;
+}
+header h1{
+    color:#00ff88;
+    font-size:36px;
+}
+header p{opacity:.8}
 
-    header {
-      background: linear-gradient(135deg, #020617, #020617);
-      padding: 25px;
-      text-align: center;
-      border-bottom: 3px solid #22c55e;
-    }
+section{
+    max-width:1000px;
+    margin:30px auto;
+    padding:20px;
+    background:#111822;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,255,136,.15);
+}
+h2{color:#00ff88}
 
-    header img {
-      width: 90px;
-      margin-bottom: 10px;
-    }
+.card{
+    background:#0c121b;
+    padding:15px;
+    border-radius:8px;
+    margin:10px 0;
+    border-left:4px solid #00ff88;
+}
+.live{color:#ff4444;font-weight:bold}
 
-    header h1 {
-      margin: 0;
-      color: #22c55e;
-      font-size: 34px;
-      letter-spacing: 2px;
-    }
+.bilet{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.bilet span{margin:5px 0}
 
-    header p {
-      margin-top: 8px;
-      color: #cbd5f5;
-      font-size: 16px;
-    }
+.buttons{
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.buttons a{
+    padding:12px 16px;
+    background:#00ff88;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    text-align:center;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .box {
-      background: #020617;
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 20px;
-      border: 1px solid #1e293b;
-    }
-
-    .box h2 {
-      color: #22c55e;
-      margin-top: 0;
-    }
-
-    .box p, .box li {
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .buttons {
-      margin-top: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin-right: 10px;
-      background: #22c55e;
-      color: #020617;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-    }
-
-    .btn.whatsapp {
-      background: #25d366;
-    }
-
-    .btn:hover {
-      opacity: 0.85;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: #94a3b8;
-      font-size: 14px;
-      border-top: 1px solid #1e293b;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 26px;
-      }
-    }
-  </style>
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+    opacity:.6;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <!-- LOGO PLACEHOLDER -->
-    <img src="https://via.placeholder.com/90x90?text=LOGO" alt="Baste Fier Logo">
-
+<header>
     <h1>BASTE FIER</h1>
     <p>Kuota të sigurta • Analiza sportive • Besueshmëri</p>
-  </header>
+</header>
 
-  <div class="container">
+<section>
+<h2>🔥 Biletat e Ditës</h2>
+<div class="card bilet">
+<span>⚽ Milan vs Roma</span>
+<span>Fiton Milan</span>
+<span>Kuota: 1.85</span>
+</div>
+<div class="card bilet">
+<span>🏀 Lakers vs Heat</span>
+<span>Over 210.5</span>
+<span>Kuota: 1.90</span>
+</div>
+</section>
 
-    <div class="box">
-      <h2>Rreth Nesh</h2>
-      <p>
-        Baste Fier është një faqe informative e dedikuar për sportdashësit.
-        Ne ofrojmë analiza, informacione dhe orientim për ndeshjet më të ndjekura,
-        me fokus në korrektësi dhe përvojë profesionale.
-      </p>
-    </div>
+<section>
+<h2>🔴 Ndeshje Live</h2>
+<div class="card">
+<span class="live">LIVE</span> Barcelona vs Atletico – 1:0 (55’)
+</div>
+<div class="card">
+<span class="live">LIVE</span> Bayern vs Dortmund – 2:2 (67’)
+</div>
+</section>
 
-    <div class="box">
-      <h2>Sportet Kryesore</h2>
-      <ul>
-        <li>⚽ Futboll – kampionate dhe liga kryesore</li>
-        <li>🏀 Basketboll – ndeshje kombëtare & ndërkombëtare</li>
-        <li>🎾 Tenis – turne të rëndësishëm</li>
-        <li>🏐 Volejboll</li>
-      </ul>
-    </div>
+<section>
+<h2>🎥 Shikim Ndeshjesh Live 3D</h2>
+<div class="card">
+⚠️ Demo UI – Integrim grafik për eksperiencë 3D (Coming Soon)
+</div>
+</section>
 
-    <div class="box">
-      <h2>Na Kontaktoni</h2>
-      <p>
-        📍 Fier, Shqipëri <br>
-        📞 Telefon: +355 6X XXX XXX <br>
-        📧 Email: info@bastefier.al
-      </p>
+<section>
+<h2>📊 Analiza Profesionale</h2>
+<div class="card">
+Analizë taktike, formë ekipesh, statistika dhe rrezik i menaxhuar për çdo ndeshje.
+</div>
+</section>
 
-      <div class="buttons">
-        <a href="tel:+3556XXXXXXXX" class="btn">📞 Telefono</a>
-        <a href="https://wa.me/3556XXXXXXXX" class="btn whatsapp">💬 WhatsApp</a>
-      </div>
-    </div>
+<section>
+<h2>📞 Na Kontaktoni</h2>
+<div class="card">
+📍 Fier, Shqipëri <br>
+📱 WhatsApp / Telegram <br>
+📧 info@bastefier.al
+</div>
+</section>
 
-  </div>
+<div class="buttons">
+<a href="#">WhatsApp</a>
+<a href="#">Telegram</a>
+</div>
 
-  <footer>
-    © 2026 Baste Fier • Të gjitha të drejtat e rezervuara
-  </footer>
+<footer>
+⚠️ +18 | Kjo faqe është informative dhe nuk promovon baste reale.
+</footer>
 
 </body>
 </html>
